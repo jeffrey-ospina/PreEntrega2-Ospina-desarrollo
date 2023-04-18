@@ -1,0 +1,106 @@
+/* Fuente para todo el contenido */
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Color nav bar */
+.bg-color-nav {
+  background-color: #d2afd9;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Etiquetas de iconos footer */
+i {
+  font-size: 2.4em;
+  color: #d2afd9;
+}
+
+i:hover {
+  color: white;
+  transition: all 0.2s linear;
+}
+
+/* Estilo página de contacto*/
+#imagen-fondo {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.073),
+      rgba(117, 19, 93, 0.484)
+    ),
+    url(../img/img-contacto/img-contacto.jpg);
+  height: 120vh;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.bg-color {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sombra {
+  text-shadow: 2px 1px rgb(0, 0, 0);
+}
+
+.casilla-texto {
+  height: 150px;
+}
+
+/* Botón ver tienda */
+.cta {
+  border: none;
+  background: none;
+}
+
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 18px;
+  padding-right: 15px;
+  text-transform: uppercase;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: black;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
