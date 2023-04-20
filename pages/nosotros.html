@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Poppins:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <!-- CSS personalizado -->
@@ -55,25 +55,37 @@
             <!-- Etiquetas de barra de navegación -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
               <li class="nav-item">
-                <a class="nav-link text-white" href="../index.html">Inicio</a>
+                <a
+                  class="nav-link text-white text-decoration-none fw-normal"
+                  href="../index.html"
+                  >Inicio</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/promociones.html"
+                <a
+                  class="nav-link text-white text-decoration-none fw-normal"
+                  href="../pages/promociones.html"
                   >Promociones</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/tienda.html"
+                <a
+                  class="nav-link text-white text-decoration-none fw-normal"
+                  href="../pages/tienda.html"
                   >Tienda</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/nosotros.html"
+                <a
+                  class="nav-link text-white text-decoration-none fw-normal"
+                  href="../pages/nosotros.html"
                   >Nosotros</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="../pages/contacto.html"
+                <a
+                  class="nav-link text-white text-decoration-none fw-normal"
+                  href="../pages/contacto.html"
                   >Contacto</a
                 >
               </li>
@@ -85,39 +97,123 @@
     <!-- Comienzo del main -->
     <main></main>
     <!-- Pie de página -->
-    <footer class="pt-4 pb-4 bg-secondary text-white">
-      <!-- Contenedor -->
-      <div class="container">
-        <!-- Columnas -->
-        <div class="row d-flex justify-content-around">
-          <div class="col-2">
+    <footer>
+      <div class="container-fluid bg-secondary-subtle text-dark mt-5 pt-3">
+        <div class="ms-5 me-5 row px-xl-5 pt-2">
+          <div
+            class="d-flex flex-column justify-content-around col-lg-4 col-md-12 mb-3 pr-3 pr-xl-5"
+          >
+            <a href="./index.html">
+              <img
+                src="../img/logo-sin-fondo.png"
+                width="150px"
+                alt="imagen del footer"
+              />
+            </a>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspici
+              Dolore erat dolor sit lorem vero amet. Sed sit lorem magna, ipsum
+              no sit erat lorem et magna ipsum dolore amet erat.
             </p>
+            <a class="mb-2 text-dark text-decoration-none">
+              <i class="bi bi-geo-alt-fill"></i>Mérida, Venezuela
+            </a>
+            <a class="mb-2 text-dark text-decoration-none">
+              <i class="mr-3 bi bi-envelope-at-fill"></i>bekalenceriaa@gmail.com
+            </a>
+            <a class="mb-0 text-dark text-decoration-none">
+              <i class="bi bi-whatsapp"></i>+58 4247132178
+            </a>
           </div>
-          <div class="col-2">
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
-            </p>
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="pt-3 col-md-4 mb-3">
+                <h5 class="text-dark mb-4">Acceso rápido</h5>
+                <div class="d-flex flex-column justify-content-start">
+                  <a class="text-dark mb-2" href="/index.html"
+                    ><i class="bi bi-caret-right-fill"></i>Inicio</a
+                  >
+                  <a class="text-dark mb-2" href="../pages/promociones.html"
+                    ><i class="bi bi-caret-right-fill"></i>Promociones</a
+                  >
+                  <a class="text-dark mb-2" href="../pages/tienda.html"
+                    ><i class="bi bi-caret-right-fill"></i>Tienda</a
+                  >
+                  <a class="text-dark mb-2" href="../pages/nosotros.html"
+                    ><i class="bi bi-caret-right-fill"></i>Nosotros</a
+                  >
+                  <a class="text-dark mb-2" href="../pages/contacto.html"
+                    ><i class="bi bi-caret-right-fill"></i>Contacto</a
+                  >
+                </div>
+              </div>
+              <div class="pt-3 col-md-4 mb-3">
+                <h5 class="font-weight-bold text-dark mb-4">Avisos legales</h5>
+                <div class="d-flex flex-column justify-content-start">
+                  <a class="text-dark mb-2" href="#"
+                    ><i class="bi bi-caret-right-fill"></i>Política de
+                    privacidad</a
+                  >
+                  <a class="text-dark mb-2" href="#"
+                    ><i class="bi bi-caret-right-fill"></i>Condiciones de uso</a
+                  >
+                  <a class="text-dark mb-2" href="#"
+                    ><i class="bi bi-caret-right-fill"></i>Preguntas
+                    frecuentes</a
+                  >
+                  <a class="text-dark mb-2" href="#"
+                    ><i class="bi bi-caret-right-fill"> </i>Centro de ayuda</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <h5 class="font-weight-bold text-dark mb-4 text-center">
+                  ¿Deseas recibir nuestro newsletter?
+                </h5>
+                <form action="#">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control border-5 py-2 mb-2"
+                      placeholder="Nombre"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control border-5 py-2 mb-4"
+                      placeholder="E-mail"
+                      required="required"
+                    />
+                  </div>
+                  <div class="d-flex flex-column align-items-center">
+                    <button class="btn button-color border-5" type="submit">
+                      Suscríbete
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
-        <!-- Sección de iconos -->
-        <div class="row ms-auto">
-          <div class="d-flex justify-content-center align-items-center">
-            <a href="https://www.instagram.com/bekalenceriaa/" class="me-4">
-              <i class="bi bi-instagram"></i>
-            </a>
-            <a href="https://es-la.facebook.com/" class="me-4">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="#" class="me-4">
-              <i class="bi bi-envelope"></i>
-            </a>
+        <div class="container me-auto">
+          <div class="row border-top border-light mx-xl-5 py-4">
+            <div class="col-md-6 px-xl-0">
+              <p class="mb-md-0 text-center text-dark">
+                <a class="text-dark" href="../index.html"
+                  >Beka Lencería &copy; 2023.
+                </a>
+                Todos los derechos reservados.
+              </p>
+            </div>
+            <div class="col-md-6 px-xl-0 text-center text-md-right">
+              <img
+                class="img-fluid"
+                src="../img/img-footer/pagos.png"
+                alt="métodos de pago"
+              />
+            </div>
           </div>
-        </div>
-        <!-- Texto derechos reservados -->
-        <div class="text-center fs-6 text pt-3">
-          Copyright 2023 © Beka Lencería y Trajes de Baño
         </div>
       </div>
     </footer>
