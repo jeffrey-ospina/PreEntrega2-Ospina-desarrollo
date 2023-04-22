@@ -35,9 +35,7 @@
     <!-- Header -->
     <header>
       <!-- Barra de navegación -->
-      <nav
-        class="navbar navbar-expand-lg bg-color-nav p-2 fixed-top shadow p-3 mb-5"
-      >
+      <nav class="navbar navbar-expand-lg bg-color-nav p-2 fixed-top shadow">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
             <img src="img/favicon.svg" alt="logo" />
@@ -97,47 +95,149 @@
       </nav>
     </header>
     <!-- Comienzo del main -->
-    <main class="container text-center espacio">
-      <!-- Contenido-->
-      <div class="row">
+    <main class="pt-5 mt-3">
+      <!-- Carrusel -->
+      <section class="ms-5 me-5 pt-3">
         <div
-          class="col-5 d-flex flex-column align-items-center justify-content-evenly"
+          id="carouselExampleAutoplaying"
+          class="carousel slide"
+          data-bs-ride="carousel"
         >
-          <h1 class="font fw-semibold">Tu mejor elección, siempre contigo</h1>
-          <p>
-            Acá en Beka Lencería podrás encontrar productos de la mejor calidad,
-            variedad de colores para que elijas las mejores prendas que te
-            acompañan en esos momentos íntimos.
-          </p>
-          <!-- Botón de tienda -->
-          <button class="cta">
-            <a href="./pages/tienda.html" class="text-decoration-none">
-              <span class="hover-underline-animation"> Ver tienda </span>
-            </a>
-            <svg
-              viewBox="0 0 46 16"
-              height="10"
-              width="30"
-              xmlns="http://www.w3.org/2000/svg"
-              id="arrow-horizontal"
-            >
-              <path
-                transform="translate(30)"
-                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                data-name="Path 10"
-                id="Path_10"
-              ></path>
-            </svg>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/img-index/banner-1.jpg"
+                class="d-block w-100"
+                alt="lenceria vino"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/img-index/banner-2.jpg"
+                class="d-block w-100"
+                alt="lenceria beige"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/img-index/banner-3.jpg"
+                class="d-block w-100"
+                alt="lenceria negra"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <!-- Imagen grande -->
-        <div class="col-7">
-          <img
-            class="rounded rounded-4"
-            src="./img/img-index/img-principal.jpg"
-            width="100%"
-            alt="imagen principal"
-          />
+      </section>
+      <!-- Segunda sección -->
+      <div class="container pt-3 mt-3 seccion-2">
+        <div class="row">
+          <div
+            class="d-flex flex-column align-items-center justify-content-evenly"
+          >
+            <h1 class="fs-1 fw-semibold pt-3">
+              Tu mejor elección, siempre contigo
+            </h1>
+            <p class="col-6 text-center pt-3 mb-5">
+              Acá en Beka Lencería podrás encontrar productos de la mejor
+              calidad, variedad de colores para que elijas las mejores prendas
+              que te acompañan en esos momentos íntimos.
+            </p>
+            <div class="row w-100 justify-content-around pt-3">
+              <div class="card" style="width: 18rem; border: 0">
+                <img
+                  src="img/img-index/card-1.jpg"
+                  class="card-img-top rounded-circle"
+                  alt="tarjeta 1"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; border: 0">
+                <img
+                  src="img/img-index/card-2.jpg"
+                  class="card-img-top rounded-circle"
+                  alt="tarjeta 2"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem; border: 0">
+                <img
+                  src="img/img-index/card-3.jpg"
+                  class="card-img-top rounded-circle"
+                  alt="tarjeta 3"
+                />
+                <div class="card-body d-flex flex-column align-items-center">
+                  <h5 class="card-title">Card title</h5>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <!-- Botón de tienda -->
+            <!-- <button class="cta pt-5">
+              <a href="./pages/tienda.html" class="text-decoration-none">
+                <span class="hover-underline-animation"> Ver tienda </span>
+              </a>
+              <svg
+                viewBox="0 0 46 16"
+                height="10"
+                width="30"
+                xmlns="http://www.w3.org/2000/svg"
+                id="arrow-horizontal"
+              >
+                <path
+                  transform="translate(30)"
+                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                  data-name="Path 10"
+                  id="Path_10"
+                ></path>
+              </svg>
+            </button> -->
+          </div>
         </div>
       </div>
     </main>
@@ -206,7 +306,7 @@
                   >
                 </div>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-4 mb-3 pt-3">
                 <h5 class="font-weight-bold text-dark mb-4 text-center">
                   ¿Deseas recibir nuestro newsletter?
                 </h5>

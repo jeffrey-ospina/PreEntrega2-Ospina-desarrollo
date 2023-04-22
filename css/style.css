@@ -13,8 +13,8 @@ h1 {
   font-family: "Montserrat", sans-serif;
 }
 
-.espacio {
-  margin-top: 8rem;
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -23,6 +23,11 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Seccion 2 Index */
+.seccion-2 {
+  height: 80vh;
 }
 
 /* Botón newsletter */
@@ -62,10 +67,6 @@ a:hover {
 
 .sombra {
   text-shadow: 2px 1px rgb(0, 0, 0);
-}
-
-.casilla-texto {
-  height: 150px;
 }
 
 /* Botón ver tienda */

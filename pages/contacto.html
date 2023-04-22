@@ -35,7 +35,7 @@
     <!-- Header -->
     <header>
       <!-- Barra de navegación -->
-      <nav class="navbar navbar-expand-lg bg-color-nav p-2">
+      <nav class="navbar navbar-expand-lg bg-color-nav p-2 fixed-top shadow">
         <div class="container">
           <a class="navbar-brand" href="../index.html">
             <img src="../img/favicon.svg" alt="logo" />
@@ -81,7 +81,7 @@
       </nav>
     </header>
     <!-- Comienzo del main -->
-    <main>
+    <main class="pt-5 mt-3">
       <section class="position-relative" id="imagen-fondo">
         <div class="container text-white text-center p-5 sombra">
           <h1 class="fw-semibold">¿Cómo podemos ayudarte?</h1>
@@ -106,31 +106,12 @@
               Nunca compartiremos tus datos personales con nadie.
             </div>
           </div>
-          <!-- <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label"
-              >Contraseña:</label
-            >
-            <input
-              type="password"
-              class="form-control"
-              id="exampleInputPassword1"
-            />
-          </div> -->
-          <div class="mb-3 input-group casilla-texto">
+          <div class="mb-3 input-group">
             <textarea
               class="form-control"
               aria-label="With textarea"
+              style="height: 130px;"
             ></textarea>
-          </div>
-          <div class="mb-3 form-check">
-            <input
-              type="checkbox"
-              class="form-check-input"
-              id="exampleCheck1"
-            />
-            <label class="form-check-label" for="exampleCheck1"
-              >Suscribirme al newsletter semanal (opcional)</label
-            >
           </div>
           <button type="submit" class="btn btn-primary">Enviar</button>
           </form>
@@ -206,7 +187,7 @@
                   >
                 </div>
               </div>
-              <div class="col-md-4 mb-3">
+              <div class="col-md-4 mb-3 pt-3">
                 <h5 class="font-weight-bold text-dark mb-4 text-center">
                   ¿Deseas recibir nuestro newsletter?
                 </h5>
