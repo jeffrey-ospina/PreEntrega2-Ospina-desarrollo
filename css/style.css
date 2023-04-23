@@ -9,8 +9,8 @@
 }
 
 h1 {
-  font-size: 3rem;
-  font-family: "Montserrat", sans-serif;
+  /* font-size: 3rem; */
+  font-family: "Poppins", sans-serif;
 }
 
 p {
@@ -25,9 +25,31 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Seccion 2 Index */
+/* Seccion 2 index */
 .seccion-2 {
   height: 80vh;
+}
+
+/* Estilo página Nosotros */
+
+/* Sección 2 */
+.card {
+  background: rgba(252, 216, 255, 0.518);
+  border-radius: 0.9em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+}
+
+.card:hover {
+  border: #d2afd9 0.2em solid;
+  transform: scale(1.025);
+}
+
+/* Botones de productos */
+.over-button:hover {
+  font-weight: 500 !important;
+  transition: ease-in 0.2s;
 }
 
 /* Botón newsletter */
